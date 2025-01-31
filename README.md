@@ -87,9 +87,10 @@ Note: JJWT depends on Jackson 2.x.  If you're already using an older version of 
 Most complexity is hidden behind a convenient and readable builder-based [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface), great for relying on IDE auto-completion to write code quickly.  Here's an example:
 
 ```java
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import io.jsonwebtoken.impl.crypto.MacProvider;
+import com.spoqa.jsonwebtoken.Jwts;
+import com.spoqa.jsonwebtoken.SignatureAlgorithm;
+import crypto.impl.com.spoqa.jsonwebtoken.MacProvider;
+
 import java.security.Key;
 
 // We need a signing key, so we'll create one just for this example. Usually
@@ -97,9 +98,9 @@ import java.security.Key;
 Key key = MacProvider.generateKey();
 
 String compactJws = Jwts.builder()
-  .setSubject("Joe")
-  .signWith(SignatureAlgorithm.HS512, key)
-  .compact();
+        .setSubject("Joe")
+        .signWith(SignatureAlgorithm.HS512, key)
+        .compact();
 ```
 
 How easy was that!?

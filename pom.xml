@@ -23,9 +23,9 @@
         <version>7</version>
     </parent>
 
-    <groupId>io.jsonwebtoken</groupId>
+    <groupId>com.spoqa.jsonwebtoken</groupId>
     <artifactId>jjwt</artifactId>
-    <version>0.9.1</version>
+    <version>1.0.0</version>
     <name>JSON Web Token support for the JVM</name>
     <packaging>jar</packaging>
     <url>https://github.com/jwtk/jjwt</url>
@@ -308,7 +308,7 @@
                     <excludes>
                         <exclude>**/*Test*</exclude>
                         <!-- leaving out lang as it mostly comes from other sources -->
-                        <exclude>io/jsonwebtoken/lang/*</exclude>
+                        <exclude>com/spoqa/jsonwebtoken/lang/*</exclude>
                     </excludes>
                     <methodPercentage>100%</methodPercentage>
                     <statementPercentage>100%</statementPercentage>
